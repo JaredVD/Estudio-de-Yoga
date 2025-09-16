@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--titulo de la página-->
+    <title>Estudio de Yoga</title>
+
+    <!--descripcion-->
+    <meta name="description" content="Página web de estudio de yoga" />
+
+    <!--prefetch-->
+    <link rel="prefetch" href="clases.html" as="document" />
+
+    <!--normalize-->
+    <link rel="preload" href="css/normalize.css" as="stylesheet" />
+    <link href="css/normalize.css" rel="stylesheet" />
+
+    <!--hoja de estilos-->
+    <link rel="preload" href="css/style.css" as="style" />
+    <link href="css/style.css" rel="stylesheet" />
+
+    <!--fuente-->
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      as="font"
+      crossorigin="crossorigin"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet" media="print" onload="this.media='all'"
+    />
+
+    <!--preload al hero-->
+    <link rel="preload" as="image" href="img/cataratas.jpg"/>
+  </head>
+  <body>
+    <!--header-->
+    <header class="header">
+      <div class="desvanecido-header">
+        <div class="contenedor-header">
+          <a class="contenedor-header__enlace" href="index.html">
+            <picture>
+              <source width="310" height="310" loading="lazy" srcset="img/logo.webp" type="image/webp"/>
+              <img width="310" height="310" loading="lazy" src="img/logo.png" alt="logo de una persona en una posición relajante" />
+            </picture>
+           
+          </a>
+          <p class="no-margin frase">"Estás donde está tu respiración"</p>
+
+          <nav class="header-navegacion">
+            <a class="header-navegacion__enlace" href="index.html">Inicio</a>
+            <a class="header-navegacion__enlace" href="clases.html">Clases</a>
+            <a class="header-navegacion__enlace" href="contacto.html"
+              >Contacto</a
+            >
+          </nav>
+        </div>
+        <p class="estudio no-margin">Respira</p>
+        <h1 class="descripcion no-margin">Estudio de Yoga</h1>
+        <div class="ubicacion">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="#ffffff"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            width="100"
+            height="100"
+            stroke-width="1.5"
+          >
+            <path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"></path>
+            <path
+              d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z"
+            ></path>
+          </svg>
+          <p class="ubicacion__parrafo">México, CDMX</p>
+        </div>
+      </div>
+    </header>
+
+    <!--clases-->
+    <main class="main">
+      <h2 class="titulo-clases no-margin">Clases</h2>
+
+      <div class="clases">
+        <!--clase 1-->
+        <div class="clase">
+          <h3 class="no-margin h3-clase">Yoga Para Principiantes</h3>
+          <picture>
+            <source width="735" height="551" class="clase__image" srcset="img/principiantes.webp" loading="lazy" type="image/webp"/>
+              <img width="735" height="551" class="clase__image" src="img/principiantes.jpg" alt="Yoga para principiantes" loading="lazy"/>
+          </picture>
+          <p class="clase__parrafo">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis sed
+            laboriosam alias, itaque doloribus praesentium non aliquam nam
+            facilis tenetur.
+          </p>
+        </div>
+        <!--clase 2-->
+        <div class="clase">
+          <h3 class="no-margin h3-clase">Yoga Avanzado</h3>
+          <picutre>
+            <source width="735" height="551" class="clase__image" srcset="img/avanzados.webp" loading="lazy" type="image/webp"/>
+            <img width="735" height="551" class="clase__image" src="img/avanzados.jpg" alt="Yoga avanzado" loading="lazy"/>
+          </picture>
+        
+          <p class="clase__parrafo">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis sed
+            laboriosam alias, itaque doloribus praesentium non aliquam nam
+            facilis tenetur.
+          </p>
+        </div>
+        <!--clase 3-->
+        <div class="clase">
+          <h3 class="no-margin h3-clase">Meditación Guiada</h3>
+          <picture>
+            <source width="735" height="551" loading="lazy" class="clase__image" srcset="img/meditacion.webp" type="image/webp"/>
+            <img width="735" height="551" loading="lazy" class="clase__image" src="img/meditacion.jpg" alt="Meditacion guiada"/>
+          </picture>
+       
+          <p class="clase__parrafo">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis sed
+            laboriosam alias, itaque doloribus praesentium non aliquam nam
+            facilis tenetur.
+          </p>
+        </div>
+        <a href="clases.html" class="boton">Ver Horarios</a>
+      </div>
+      
+      <section class="advertencia">
+        <h2 class="no-margin advertencia__h2">Aviso</h2>
+        <p class="no-margin advertencia__p">Todas las imagenes usadas en este sitio web exceptuando el logo de la esquina superior izquierda (que fue tomado de Canva) fueron creadas con IA (específicamente con Grok)</p>
+    </section>
+    </main>
+
+    <!--footer-->
+    <footer class="footer">
+        <p class="footer__parrafo no-margin">Sitio Web hecho por Jared Vázquez Díaz</p>
+    </footer>
+  </body>
+</html>
